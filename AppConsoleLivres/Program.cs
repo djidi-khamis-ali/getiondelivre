@@ -14,5 +14,19 @@ internal class Program
         {
             Revue.AfficheDetails();
         }
+
+
+        Roman roman1 = new Roman("technologie","Djidi",300,"science");
+        Roman roman2 = new Roman("histoir", "Romain", 2339, "history");
+        Roman roman3 = new Roman("Lion", "Mark", 3572, "Humour");
+
+        List<Roman>Romains = new List<Roman> { roman1, roman2, roman3 };
+        Console.WriteLine("les romains sont :");
+        foreach (var Romain in Romains)
+        {
+            Romain.AfficheDetails();
+        }
+        Console.WriteLine();
+
     }
 }
