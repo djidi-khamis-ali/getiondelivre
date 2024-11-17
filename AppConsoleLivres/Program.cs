@@ -28,5 +28,16 @@ internal class Program
         }
         Console.WriteLine();
 
+
+
+
+        List<Livre> livres = new List<Livre> {revue1,revue2,revue3,roman1,roman2,roman3 };
+
+        Console.WriteLine("les Livres sont: ");
+        foreach(var Livre in livres)
+        {
+            Livre.AfficheDetails();
+        }
+
     }
 }
